@@ -1,0 +1,19 @@
+public class Taller 
+{
+    public class  DescuentoCalculator // Eercicio 2
+    {
+       public static double descuento(double x,double y)
+        {
+            double z= x*y/100;
+            z=x-z;
+            return z;
+        }
+    }
+    public static void main(String[] args) 
+    {
+        double precio = Double.parseDouble(JOptionPane.showInputDialog("Ingrese El precio total: "));
+        double descuento = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el descuento: "));
+        double total = DescuentoCalculator.descuento(precio,descuento);
+        JOptionPane.showMessageDialog(null,"El precio con el descuento aplicado es de: "+total);
+    }
+}

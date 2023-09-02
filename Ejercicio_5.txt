@@ -1,0 +1,20 @@
+
+public class Taller 
+{
+      public class  IMCCalculator // Eercicio 5
+    {
+       public static double IMC(double x,double y)
+        {
+            y=y/100;
+            double z= x/Math.pow(y, 2);
+            return z;
+        }
+    }
+    public static void main(String[] args) 
+    {
+        int estatura = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la estatura en Cm: "));
+        int peso = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el peso en Kg: "));
+        double imc = IMCCalculator.IMC(peso,estatura);
+        JOptionPane.showMessageDialog(null,"El IMC es: "+imc);
+    }
+} 

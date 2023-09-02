@@ -1,0 +1,40 @@
+public class Taller 
+{
+    public class  TemperaturaConvertir // Eercicio 1
+    {
+        
+        public static double convfaren(double x)
+        {
+            double y= (x*9/5)+32;
+            return y;
+        }
+        public static double convcelc(double x)
+        {
+            double y= (x-32)*5/9;
+            return y;
+        }
+    }
+    public static void main(String[] args) 
+    {
+        
+        /*
+
+        int dato = Integer.parseInt(JOptionPane.showInputDialog("Sistema a convertir\n" +
+        "1.De Fahrenheit a Celsius\n" +
+        "2.De Celsius a Fahrenheit\n" +
+        "Elige una opción"));
+        if (dato == 1)
+        {
+            double farenheit = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la temperatura farenheit a convertir: "));
+            double cel = TemperaturaConvertir.convcelc(farenheit);
+            JOptionPane.showMessageDialog(null,"La temperatura en grados celcius es: "+cel);
+            
+        }
+        else if(dato==2)
+        {
+            double celcius = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la temperatura farenheit a convertir: "));
+            double far = TemperaturaConvertir.convfaren(celcius);
+            JOptionPane.showMessageDialog(null,"La temperatura en grados celcius es: "+far);
+        }
+    }
+}

@@ -1,0 +1,36 @@
+public class Taller 
+{
+    public class tiponumero
+    {
+        public static int primos(int x)
+        {
+            int contador=0;
+            for(int i=1;i<=x;i++)
+            {
+                if(x%i==0)
+                {
+                    contador++;
+                }
+            }
+            contador=contador>2?0:1;
+            return contador;    
+        }
+    }
+
+
+    public static void main(String[] args) 
+    {
+        //EJERCICIO 7
+        int x=Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número a validar"));
+        int contador = tiponumero.primos(x); 
+        if(contador==1)
+        {
+            JOptionPane.showMessageDialog(null,"El número "+x+"es primo.");
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"El número "+x+"no es primo.");
+        }
+        */
+    }
+}

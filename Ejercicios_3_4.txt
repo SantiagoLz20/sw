@@ -1,0 +1,20 @@
+//EJERCICIO 3
+        
+        int num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero: "));
+        int x=num%2==0?1:0;
+        if(x==1)
+        {
+            JOptionPane.showMessageDialog(null,"El numero: "+num+" es par.");
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(null,"El numero: "+num+" es impar.");
+        }
+        
+        //EJERCICIO 4
+        
+        int num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero: "));
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(i+"*"+num+"="+(num*i));
+        }
